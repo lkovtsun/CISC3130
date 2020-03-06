@@ -7,12 +7,12 @@ made by Liubomyr Kovtsun
   * Data used in the program is in data/ folder
   * Output is in output/ folder
   
-  The program contains multiple classes (LinkedList, HistoryStack, Playlist, MyQueue, Main). LinkedList class used to store the
-    start and end of lists used in queues and stacks. MyQueue class extends LinkedList and has main methods to work with a queue
-    like to create queue,sort,merge,print its contents. Playlist class is like MyQueue class but has method listen(), which 
-    in theory should be called when user listens a song. HistoryStack class extends LinkedList and it is a stack where songs
-    are placed when listened. Main class make main calls and (currently not present) user interface which will prompt the user
-    the options.
+  The program contains multiple classes (LinkedList, HistoryStack, Playlist, MyQueue, Main). 
+        LinkedList class used to store the start and end of lists used in queues and stacks. 
+        MyQueue class extends LinkedList and has main methods to work with a queue like to create queue,sort,merge,print its contents.  
+        Playlist class is like MyQueue class but has method listen(), which in theory should be called when user listens a song. 
+        HistoryStack class extends LinkedList and it is a stack where songs are placed when listened. 
+        Main class make main calls and (currently not present) user interface which will prompt the user the options.
     
   The program has stored the name of input data files. Program opens each file and reads each name of the track and constructs
     Track object which holds name of the song. As it constructs, the Track is also placed into a queue. When loop finishes, queues
