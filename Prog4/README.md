@@ -1,4 +1,4 @@
-Assignment 3
+Assignment 4
 
 made by Liubomyr Kovtsun
 
@@ -7,8 +7,6 @@ made by Liubomyr Kovtsun
 * Data used in the program is in data/ folder
 * Output is in output/ folder
 
-The program contains multiple classes (Movies, MoviesBST, Main). MoviesBST class acts as root for the binary search tree and simple tasks to find and subset. Movies class acts as storage place for the data and references to its children. Main class invokes methods and prints the data.
+First part of an assignment I accomplished by using a HashMap with genres keys and objects as an Arraylist of Movie objects which contain name, release date and genres of a movies. Also, this program is somewhat automated, for example while the program reads the input file it can read and create new genre key in hashmap and later to fill arraylist with such movies and later to print genres I use key set of hash mmap and to print the amount of movies at each genre I used the size of arraylist. This helps when input file can have different amounts of information.
 
-The program can store multiple input files. Open them and put it into the binary search tree. The program reads a section with name and release date from each row in the csv file. Then it splits name and year using a substring method. Creates a Movie object with a name and as an integer a release date. Then tries to put object into leaf of the tree by comparing by names. When everything is read, the program subsets a tree with two initial names. It first looks for the first movie object and creates the new mirror object with mirrored new objects in order to not to change references in the original tree. Then it creates a branch path to the second movie name. Afterwards the path is transferred to reference object and it prints the path with its movie names and release dates to the output file.
-
-Note: The csv input data is corrupted or badly structured. For example, "Godfather: Part II, The (1974)" and sometimes release date is not mentioned or not in the parenthesis. It gave me small headache while finishing the program.
+Second part of the assignment I accomplished by creating nested hashmaps. Main hashmap contains each genre name as keys and other hashmap with release dates as keys and number of movies as a return. To create this new database I used precious hashmap with Movie objects because it already contains realease date instead of reading the file again. Similarly to first part it is automated. It automatically adds genres and counts movies released at particular year of that genre. Later, I print a table of movies between 1980 and 2020 years for each genre. I tried also to use python to create charts but it has few bugs and I was unable to accomplish it because it was first time using it.
