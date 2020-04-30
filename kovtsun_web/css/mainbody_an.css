@@ -1,0 +1,38 @@
+/* CSS Document */
+
+#container {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 11px;
+	margin-bottom: 21px;
+}
+#rightbar {
+	width: 800px;
+	height: 400px;
+	background-color: rgba(53,170,212,0.49);
+	float: right;
+	text-align: center;
+}
+
+#sidebar {
+	width: 400px;
+	height: 400px;
+	background-color:rgba(53,170,212,0.49);
+	float: left;
+}
+
+#225info {
+	width: 800px;
+	height: auto;
+	background-color:rgba(53,170,212,0.49);
+	
+}
+
+#footer{
+
+	height:auto;
+	background-color:rgba(211,173,92,0.77);
+	clear:both;
+}
